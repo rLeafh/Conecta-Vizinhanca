@@ -2,13 +2,13 @@
 
 > **HU-01: Cadastro e Autenticação de Usuário**
 > **como um** novo visitante da plataforma,
-> **eu quero** me cadastrar com nome, e-mail e senha, e depois fazer login,
+> **eu quero** poder me cadastrar com nome, e-mail, senha e depois fazer login,
 > **para que** eu possa acessar as funcionalidades seguras da plataforma e ser identificado pela comunidade.
 >
 > **Critérios de Aceitação:**
-> * **Dado** que estou na página de cadastro e preencho os dados válidos, **quando** eu clico em "Cadastrar", **então** um novo 'User' é criado no banco de dados e sou redirecionado para a página de login.
+> * **Dado** que estou na página de cadastro e preencho os dados válidos, **quando** eu clico no botão "Cadastrar", **então** um novo 'User' é criado no banco de dados e sou redirecionado para a página de login.
 > * **Dado** que tento me cadastrar com um e-mail que já existe, **quando** eu envio o formulário, **então** devo receber uma mensagem de erro informando "E-mail já cadastrado".
-> * **Dado** que possuo uma conta válida e estou na página de login, **quando** eu preencho minhas credenciais corretas e clico em "Entrar", **então** devo receber um token de autenticação (JWT) e ser redirecionado para a página principal.
+> * **Dado** que possuo uma conta válida e estou na página de login, **quando** eu preencher minhas credenciais corretamentes e clico em "Entrar", **então** devo receber um token de autenticação (JWT) e ser redirecionado para a página principal.
 
 > **HU-02: Criar Pedido de Favor**
 > **como um** usuário autenticado,
@@ -48,4 +48,5 @@
 > **Critérios de Aceitação:**
 > * **Dado** que estou logado e na página de detalhes de um pedido que eu criei, **quando** existem interesses registrados, **então** uma seção "Interessados" deve ser exibida com a lista de nomes dos usuários.
 > * **Dado** que estou na página de detalhes de um pedido meu e não há interesses, **então** a seção "Interessados" deve exibir uma mensagem como "Ainda não há interessados".
+
 > * **Dado** que estou na página de detalhes de um pedido de outro usuário, **então** a seção "Interessados" não deve estar visível.
